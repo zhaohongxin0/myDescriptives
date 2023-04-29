@@ -137,7 +137,7 @@ agepyramidClass <- if (requireNamespace('jmvcore')) R6::R6Class(
                               )
 
 
-         plot <- plot + ggtheme
+         plot <- plot + ggtheme + ggprism::theme_prism(base_size = 16)
 
          print(plot)
          TRUE
